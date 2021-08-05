@@ -2645,3 +2645,116 @@ Leetcode题目：https://leetcode.com/problems/set-matrix-zeroes/
 
 
 
+30 大厂高频算法和数据结构面试题30
+
+题目：
+
+给定一个 m x n 二维字符网格 board 和一个字符串单词 word 。如果 word 存在于网格中，返回 true ；否则，返回 false 。
+单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
+Leetcode题目 : https://leetcode.com/problems/word-search/
+
+给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 nums1 成为一个有序数组。
+初始化 nums1 和 nums2 的元素数量分别为 m 和 n 。你可以假设 nums1 的空间大小等于 m + n，这样它就有足够的空间保存来自 nums2 的元素。
+示例 1：
+输入：nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+输出：[1,2,2,3,5,6]
+示例 2：
+输入：nums1 = [1], m = 1, nums2 = [], n = 0
+输出：[1]
+Leetcode题目 : https://leetcode.com/problems/merge-sorted-array/
+
+一条包含字母 A-Z 的消息通过以下映射进行了 编码 ：
+'A' -> 1
+'B' -> 2
+...
+'Z' -> 26
+要 解码 已编码的消息，所有数字必须基于上述映射的方法，反向映射回字母（可能有多种方法）。例如，"11106" 可以映射为：
+"AAJF" ，将消息分组为 (1 1 10 6)
+"KJF" ，将消息分组为 (11 10 6)
+注意，消息不能分组为  (1 11 06) ，因为 "06" 不能映射为 "F" ，这是由于 "6" 和 "06" 在映射中并不等价。
+给你一个只含数字的 非空 字符串 s ，请计算并返回 解码 方法的 总数 。
+题目数据保证答案肯定是一个 32 位 的整数。
+Leetcode题目 : https://leetcode.com/problems/decode-ways/
+
+一条包含字母 A-Z 的消息通过以下的方式进行了编码：
+'A' -> 1
+'B' -> 2
+...
+'Z' -> 26
+除了上述的条件以外，现在加密字符串可以包含字符 '*'了，字符'*'可以被当做1到9当中的任意一个数字。
+给定一条包含数字和字符'*'的加密信息，请确定解码方法的总数。
+同时，由于结果值可能会相当的大，所以你应当对109 + 7取模。（翻译者标注：此处取模主要是为了防止溢出）
+示例 1 :
+输入: "*"
+输出: 9
+解释: 加密的信息可以被解密为: "A", "B", "C", "D", "E", "F", "G", "H", "I".
+示例 2 :
+输入: "1*"
+输出: 9 + 9 = 18（翻译者标注：这里1*可以分解为1,* 或者当做1*来处理，所以结果是9+9=18）
+Leetcode题目 : https://leetcode.com/problems/decode-ways-ii/
+
+给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+假设一个二叉搜索树具有如下特征：
+节点的左子树只包含小于当前节点的数。
+节点的右子树只包含大于当前节点的数。
+所有左子树和右子树自身必须也是二叉搜索树。
+示例 1:
+输入:
+    2
+   / \
+  1   3
+输出: true
+示例 2:
+输入:
+    5
+   / \
+  1   4
+     / \
+    3   6
+输出: false
+解释: 输入为: [5,1,4,null,null,3,6]。
+     根节点的值为 5 ，但是其右子节点值为 4 。
+Leetcode题目 : https://leetcode.com/problems/validate-binary-search-tree/
+
+给定一个二叉树，检查它是否是镜像对称的。
+Leetcode题目 : https://leetcode.com/problems/symmetric-tree/
+
+给定一个二叉树，返回其节点值的锯齿形层序遍历。（即先从左往右，再从右往左进行下一层遍历，以此类推，层与层之间交替进行）。
+Leetcode题目 : https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+
+给你一个整数数组 nums ，其中元素已经按 升序 排列，请你将其转换为一棵 高度平衡 二叉搜索树。
+高度平衡二叉树是一棵满足每个节点的左右两个子树的高度差的绝对值不超过1的二叉树
+Leetcode题目 : https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+
+给定一个 完美二叉树 ，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：
+struct Node {
+  int val;
+  Node *left;
+  Node *right;
+  Node *next;
+}
+填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。
+初始状态下，所有 next 指针都被设置为 NULL。
+进阶：
+这棵树如果是普通二叉树，该怎么做。
+你只能使用常量级额外空间。
+Leetcode题目 : https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+
+给定一个非负整数 numRows，生成「杨辉三角」的前 numRows 行。
+在「杨辉三角」中，每个数是它左上方和右上方的数的和。
+Leetcode题目 : https://leetcode.com/problems/pascals-triangle/
+
+给定一个非负索引 rowIndex，返回「杨辉三角」的第 rowIndex 行。
+在「杨辉三角」中，每个数是它左上方和右上方的数的和。
+你可以优化你的算法到 O(1) 空间复杂度吗？
+Leetcode题目 : https://leetcode.com/problems/pascals-triangle-ii/
+
+路径 被定义为一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。同一个节点在一条路径序列中 至多出现一次 。该路径 至少包含一个 节点，且不一定经过根节点。
+路径和 是路径中各节点值的总和。
+给你一个二叉树的根节点 root ，返回其 最大路径和。
+进阶：
+如果返回最大路径和上的所有节点，该怎么做？
+Leetcode题目 : https://leetcode.com/problems/binary-tree-maximum-path-sum/
+
+
+
