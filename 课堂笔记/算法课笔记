@@ -3121,3 +3121,116 @@ Leetcode题目 : https://leetcode.com/problems/move-zeroes/
 
 
 
+34 大厂高频算法和数据结构面试题34
+
+题目：
+
+给定一个包含 n + 1 个整数的数组 nums ，其数字都在 1 到 n 之间（包括 1 和 n），可知至少存在一个重复的整数。
+假设 nums 只有 一个重复的整数 ，找出 这个重复的数 。
+你设计的解决方案必须不修改数组 nums 且只用常量级 O(1) 的额外空间。
+Leetcode题目 : https://leetcode.com/problems/find-the-duplicate-number/
+
+生命游戏，是英国数学家约翰·何顿·康威在 1970 年发明的细胞自动机。
+给定一个包含 m × n 个格子的面板，每一个格子都可以看成是一个细胞。
+每个细胞都具有一个初始状态：1 即为活细胞（live），或 0 即为死细胞（dead）。每个细胞与其八个相邻位置（水平，垂直，对角线）的细胞都遵循以下四条生存定律：
+如果活细胞周围八个位置的活细胞数少于两个，则该位置活细胞死亡；
+如果活细胞周围八个位置有两个或三个活细胞，则该位置活细胞仍然存活；
+如果活细胞周围八个位置有超过三个活细胞，则该位置活细胞死亡；
+如果死细胞周围正好有三个活细胞，则该位置死细胞复活；
+下一个状态是通过将上述规则同时应用于当前状态下的每个细胞所形成的，其中细胞的出生和死亡是同时发生的。给你 m x n 网格面板 board 的当前状态，返回下一个状态。
+Leetcode题目 : https://leetcode.com/problems/game-of-life/
+
+中位数是有序列表中间的数。如果列表长度是偶数，中位数则是中间两个数的平均值。
+例如，
+[2,3,4] 的中位数是 3
+[2,3] 的中位数是 (2 + 3) / 2 = 2.5
+设计一个支持以下两种操作的数据结构：
+void addNum(int num) - 从数据流中添加一个整数到数据结构中。
+double findMedian() - 返回目前所有元素的中位数。
+Leetcode题目 : https://leetcode.com/problems/find-median-from-data-stream/
+
+给定一个整数数组 nums，按要求返回一个新数组 counts。数组 counts 有该性质： counts[i] 的值是  nums[i] 右侧小于 nums[i] 的元素的数量。
+示例：
+输入：nums = [5,2,6,1]
+输出：[2,1,1,0] 
+解释：
+5 的右侧有 2 个更小的元素 (2 和 1)
+2 的右侧仅有 1 个更小的元素 (1)
+6 的右侧有 1 个更小的元素 (1)
+1 的右侧有 0 个更小的元素
+Leetcode题目 : https://leetcode.com/problems/count-of-smaller-numbers-after-self/
+
+给你一个整数数组 nums，将它重新排列成 nums[0] < nums[1] > nums[2] < nums[3]... 的顺序。
+你可以假设所有输入数组都可以得到满足题目要求的结果。
+示例 1：
+输入：nums = [1,5,1,1,6,4]
+输出：[1,6,1,5,1,4]
+解释：[1,4,1,5,1,6] 同样是符合题目要求的结果，可以被判题程序接受。
+示例 2：
+输入：nums = [1,3,2,2,3,1]
+输出：[2,3,1,3,1,2]
+进阶：你能用 O(n) 时间复杂度和原地 O(1) 额外空间来实现吗？
+Leetcode题目 : https://leetcode.com/problems/wiggle-sort-ii/
+
+给定一个整数，写一个函数来判断它是否是 3 的幂次方。如果是，返回 true ；否则，返回 false 。
+Leetcode题目 : https://leetcode.com/problems/power-of-three/
+
+给定一个单链表，把所有的奇数节点和偶数节点分别排在一起。请注意，这里的奇数节点和偶数节点指的是节点编号的奇偶性，而不是节点的值的奇偶性。
+请尝试使用原地算法完成。你的算法的空间复杂度应为 O(1)，时间复杂度应为 O(nodes)，nodes 为节点总数。
+示例 1:
+输入: 1->2->3->4->5->NULL
+输出: 1->3->5->2->4->NULL
+示例 2:
+输入: 2->1->3->5->6->4->7->NULL 
+输出: 2->3->6->7->1->5->4->NULL
+说明:
+应当保持奇数节点和偶数节点的相对顺序。
+链表的第一个节点视为奇数节点，第二个节点视为偶数节点，以此类推。
+Leetcode题目 : https://leetcode.com/problems/odd-even-linked-list/
+
+给定一个字符串str，和一个正数k，返回字符种类不超过k种的最长子串长度。
+Leetcode题目 : https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/
+
+给你一个嵌套的整数列表 nestedList 。每个元素要么是一个整数，要么是一个列表；
+该列表的元素也可能是整数或者是其他列表。请你实现一个迭代器将其扁平化，使之能够遍历这个列表中的所有整数。
+实现扁平迭代器类 NestedIterator ：
+NestedIterator(List<NestedInteger> nestedList) 用嵌套列表 nestedList 初始化迭代器。
+int next() 返回嵌套列表的下一个整数。
+boolean hasNext() 如果仍然存在待迭代的整数，返回 true ；否则，返回 false 。
+你的代码将会用下述伪代码检测：
+initialize iterator with nestedList
+res = []
+while iterator.hasNext()
+    append iterator.next() to the end of res
+return res
+如果 res 与预期的扁平化列表匹配，那么你的代码将会被判为正确。
+示例 1：
+输入：nestedList = [[1,1],2,[1,1]]
+输出：[1,1,2,1,1]
+解释：通过重复调用 next 直到 hasNext 返回 false，next 返回的元素的顺序应该是: [1,1,2,1,1]。
+示例 2：
+输入：nestedList = [1,[4,[6]]]
+输出：[1,4,6]
+解释：通过重复调用 next 直到 hasNext 返回 false，next 返回的元素的顺序应该是: [1,4,6]。
+Leetcode题目 : https://leetcode.com/problems/flatten-nested-list-iterator/
+
+tic-tac-toe游戏，不知道的同学可以自行搜索。请实现以下类TicTacToe。
+构造方法：TicTacToe(int n) : TicTacToe游戏的类，n表示目前在n*n的棋盘上玩游戏。
+内部方法：int move(int i, int j, int p) : p只可能是1和2，表示玩家1还是玩家2。当前玩家在i行j列上走了一步。返回值只可能是0、1、2，0表示没有玩家赢；1表示玩家1赢了；2表示玩家2赢了。
+Leetcode题目 : https://leetcode.com/problems/design-tic-tac-toe/
+
+设计一个支持在平均 时间复杂度 O(1) 下，执行以下操作的数据结构。
+insert(val)：当元素 val 不存在时，向集合中插入该项。
+remove(val)：元素 val 存在时，从集合中移除该项。
+getRandom：随机返回现有集合中的一项。每个元素应该有相同的概率被返回。
+Leetcode题目 : https://leetcode.com/problems/insert-delete-getrandom-o1/
+
+给你一个整数数组 nums ，设计算法来打乱一个没有重复元素的数组。
+实现 Solution class:
+Solution(int[] nums) 使用整数数组 nums 初始化对象
+int[] reset() 重设数组到它的初始状态并返回
+int[] shuffle() 返回数组随机打乱后的结果
+Leetcode题目 : https://leetcode.com/problems/shuffle-an-array/
+
+
+
