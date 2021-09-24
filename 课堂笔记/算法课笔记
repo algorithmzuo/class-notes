@@ -3835,3 +3835,31 @@ leetcode题目 : https://leetcode.com/problems/next-permutation/
 
 
 
+42 大厂高频算法和数据结构面试题42
+
+给定一个二维数组cost[N][K], 
+N表示有0...N-1这么多房子，所有房子排成一条直线，i号房子和i-1号房子相邻、也和i+1号房子相邻
+K表示有0...K-1这么多颜色，每个房子都必须选择一种颜色
+cost[i][j]表示i号房子涂上j颜色的花费，并且要求相邻的房子不能是一种颜色
+返回所有房子都涂上颜色，最小的总花费
+leetcode题目 : https://leetcode.com/problems/paint-house-ii/
+
+给定一棵搜索二叉树的头节点root，搜索二叉树默认是没有重复值的，给定一个double类型的数target，给定一个正数k
+请返回在这棵二叉树里最接近target的k个值，作为链表返回
+要求：如果二叉树的节点个数为n，而k相比于n较小的话，实现时间复杂度低于O(n)的方法
+leetcode题目 : https://leetcode.com/problems/closest-binary-search-tree-value-ii/
+
+给定一个整数num，返回一个字符串str，是num的英文表达
+leetcode题目 : https://leetcode.com/problems/integer-to-english-words/
+
+二维矩阵中只有0和1，每个1可以上、下、左、右的移动
+想让所有的1汇聚在一个点上开会，请返回所有1移动的最小距离和
+leetcode题目 : https://leetcode.com/problems/best-meeting-point/
+
+给定一个含有 n 个正数的数组 x。从点 (0,0) 开始，先向北移动 x[0] 米，然后向西移动 x[1] 米，向南移动 x[2] 米，向东移动 x[3] 米，持续移动
+也就是说，每次移动后你的方位会发生逆时针变化
+编写一个 O(1) 空间复杂度的一趟扫描算法，判断你所经过的路径是否相交。
+leetcode题目 : https://leetcode.com/problems/self-crossing/
+
+
+
