@@ -4448,3 +4448,26 @@ leetcode题目：https://leetcode.com/problems/uncrossed-lines/
 
 
 
+52 大厂高频算法和数据结构面试题52
+
+给定一个数组arr，arr[i] = j，表示来到i位置需要承受j的代价。给定一个正数jump，表示任何位置都可以随意往右跳<=jump步。
+要求你从1位置开始，跳到数组最后位置n，在保证最小代价的前提下，返回字典序最小的路径
+leetcode题目：https://leetcode.com/problems/coin-path/
+
+给定一个数组bulbs，bulds[i] = j，表示第i天亮起的灯是j。任何一天只会亮一盏灯，如果天数有1~i天，那么灯也一定只有1~i号。
+给定一个正数k，如果两盏亮起的灯之间有正好k个不亮的灯，那么说这个是达标情况。
+返回最早在哪一天，会出现达标情况，如果不存在达标情况，返回-1
+leetcode题目：https://leetcode.com/problems/k-empty-slots/
+
+你的国家有无数个湖泊，所有湖泊一开始都是空的。当第 n 个湖泊下雨的时候，如果第 n 个湖泊是空的，那么它就会装满水，否则这个湖泊会发生洪水。你的目标是避免任意一个湖泊发生洪水。
+给你一个整数数组 rains ，其中：
+rains[i] > 0 表示第 i 天时，第 rains[i] 个湖泊会下雨。
+rains[i] == 0 表示第 i 天没有湖泊会下雨，你可以选择 一个 湖泊并 抽干 这个湖泊的水。
+请返回一个数组 ans ，满足：
+ans.length == rains.length
+如果 rains[i] > 0 ，那么ans[i] == -1 。
+如果 rains[i] == 0 ，ans[i] 是你第 i 天选择抽干的湖泊。
+如果有多种可行解，请返回它们中的 任意一个 。如果没办法阻止洪水，请返回一个 空的数组 。
+leetcode题目：https://leetcode.com/problems/avoid-flood-in-the-city/
+
+
