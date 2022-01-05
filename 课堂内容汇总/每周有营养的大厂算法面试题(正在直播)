@@ -220,19 +220,55 @@ leetcode链接 : https://leetcode.com/problems/loud-and-rich/
 
 第007节 2022年1月第1周流行算法题目解析
 
+来自阿里
+给定一个只由'a'和'b'组成的字符串str，
+str中"ab"和"ba"子串都可以消除，
+消除之后剩下字符会重新靠在一起，继续出现可以消除的子串...
+你的任务是决定一种消除的顺序，最后让str消除到尽可能的短
+返回尽可能的短的剩余字符串
+
+在一张 无向 图上，节点编号0~N-1。老鼠开始在1节点，猫在2节点，0号节点是洞，老鼠想进洞
+老鼠第先出发，猫后出发，轮流行动。
+在每个玩家的行动中，他们 必须 沿着图中与所在当前位置连通的一条边移动
+此外猫无法移动到洞中（节点 0）。
+然后，游戏在出现以下三种情形之一时结束：
+如果猫和老鼠出现在同一个节点，猫获胜。
+如果老鼠到达洞中，老鼠获胜。
+如果某一位置重复出现（即，玩家的位置和移动顺序都与上一次行动相同），游戏平局。
+给你一张图 graph ，并假设两位玩家都都以最佳状态参与游戏，返回谁获胜
+leetcode链接 : https://leetcode.com/problems/cat-and-mouse/
+
+给你两个长度分别 n 和 m 的整数数组 nums 和 multipliers ，其中 n >= m ，
+数组下标 从 1 开始 计数。
+初始时，你的分数为 0 。
+你需要执行恰好 m 步操作。在第 i 步操作（从 1 开始 计数）中，需要：
+选择数组 nums 开头处或者末尾处 的整数 x 。
+你获得 multipliers[i] * x 分，并累加到你的分数中。
+将 x 从数组 nums 中移除。
+在执行 m 步操作后，返回 最大 分数。
+leetcode链接 : https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/
+
+给你一棵 二叉树 的根节点 root ，这棵二叉树总共有 n 个节点
+每个节点的值为 1 到 n 中的一个整数，且互不相同
+给你一个整数 startValue ，表示起点节点 s 的值，
+和另一个不同的整数 destValue ，表示终点节点 t 的值
+请找到从节点 s 到节点 t 的 最短路径 ，
+并以字符串的形式返回每一步的方向
+每一步用 大写 字母 ‘L’ ，‘R’ 和 ‘U’ 分别表示一种方向：
+L代表左，R代表右，U代表上
+请你返回从 s 到 t 最短路径 每一步的方向。
+leetcode链接 : https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/
+
 来自学员问题
 给定一个二维数组，其中全是非负数
 每一步都可以往上、下、左、右四个方向运动
 返回从左下角走到右下角的最短距离
 
-给你一棵 二叉树 的根节点 root ，这棵二叉树总共有 n 个节点
-每个节点的值为 1 到 n 中的一个整数，且互不相同
-给你一个整数 startValue ，表示起点节点 s 的值，和另一个不同的整数 destValue ，表示终点节点 t 的值
-请找到从节点 s 到节点 t 的 最短路径 ，并以字符串的形式返回每一步的方向
-每一步用 大写 字母 'L' ，'R' 和 'U' 分别表示一种方向：
-'L' 表示从一个节点前往它的 左孩子 节点。
-'R' 表示从一个节点前往它的 右孩子 节点。
-'U' 表示从一个节点前往它的 父 节点。
-请你返回从 s 到 t 最短路径 每一步的方向。
-leetcode链接 : https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/
+
+
+
+
+
+
+
 
