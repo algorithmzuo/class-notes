@@ -371,11 +371,56 @@ leetcode链接: https://leetcode.com/problems/random-pick-with-blacklist/
 战舰只能水平或者垂直放置在 board 上。换句话说，战舰只能按 1 x k（1 行，k 列）或 k x 1（k 行，1 列）的形状建造
 其中 k 可以是任意大小
 两艘战舰之间至少有一个水平或垂直的空位分隔 （即没有相邻的战舰）
-leetcode链接：https://leetcode.com/problems/battleships-in-a-board
+leetcode链接: https://leetcode.com/problems/battleships-in-a-board
 
 
 
 第011节 2022年2月第2周流行算法题目解析
+
+给定一个长度为4的整数数组 cards 。你有 4 张卡片，每张卡片上都包含一个范围在 [1,9] 的数字
+您应该使用运算符 ['+', '-', '*', '/'] 和括号 '(' 和 ')' 将这些卡片上的数字排列成数学表达式，以获得值24。
+你须遵守以下规则:
+除法运算符 '/' 表示实数除法，而不是整数除法。
+例如， 4 /(1 - 2 / 3)= 4 /(1 / 3)= 12 。
+每个运算都在两个数字之间。特别是，不能使用 “-” 作为一元运算符。
+例如，如果 cards =[1,1,1,1] ，则表达式 “-1 -1 -1 -1” 是 不允许 的。
+你不能把数字串在一起
+例如，如果 cards =[1,2,1,2] ，则表达式 “12 + 12” 无效。
+如果可以得到这样的表达式，其计算结果为 24 ，则返回 true ，否则返回 false 。
+leetcode链接: https://leetcode.com/problems/24-game/
+
+设计位图
+leetcode链接: https://leetcode-cn.com/problems/design-bitset/
+
+给定一个整数数组，返回所有数对之间的第 k 个最小距离
+一对 (A, B) 的距离被定义为 A 和 B 之间的绝对差值
+leetcode链接 : https://leetcode.com/problems/find-k-th-smallest-pair-distance/
+
+从点 (x, y) 可以转换到 (x, x+y)  或者 (x+y, y)。
+给定一个起点 (sx, sy) 和一个终点 (tx, ty)，
+如果通过一系列的转换可以从起点到达终点，
+则返回 True ，否则返回 False。
+leetcode链接 : https://leetcode.com/problems/reaching-points/
+
+Alice 有一个下标从 0 开始的数组 arr ，由 n 个正整数组成。
+她会选择一个任意的 正整数 k 并按下述方式创建两个下标从 0 开始的新整数数组 lower 和 higher ：
+对每个满足 0 <= i < n 的下标 i ，lower[i] = arr[i] - k
+对每个满足 0 <= i < n 的下标 i ，higher[i] = arr[i] + k
+不幸地是，Alice 丢失了全部三个数组。但是，她记住了在数组 lower 和 higher 中出现的整数
+但不知道每个整数属于哪个数组。请你帮助 Alice 还原原数组。
+给你一个由 2n 个整数组成的整数数组 nums ，其中 恰好 n 个整数出现在 lower ，剩下的出现在 higher ，
+还原并返回 原数组 arr 。如果出现答案不唯一的情况，返回 任一 有效数组。
+注意：生成的测试用例保证存在 至少一个 有效数组 arr 。
+leetcode链接 : https://leetcode.com/problems/recover-the-original-array/
+
+
+
+
+
+
+
+
+
 
 
 
