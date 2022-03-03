@@ -518,12 +518,12 @@ leetcode链接 : https://leetcode.com/problems/groups-of-strings/
 3，理解算法流程中，节点的三种状态：未遍历、遍历了未结算、遍历了已结算
 4，理解什么是scc序号
 
-tarjen(cur)算法求强连通分量流程：
+tarjan(cur)算法求强连通分量流程：
 1，遍历到一个“未遍历”状态的节点cur
 2，给cur节点dfn编号和low编号，初始时low(cur) = dfn(cur) 
 3，将cur标记为“遍历了未结算”状态，并放入栈中
 4，对于cur的每个孩子q，做如下两步操作：
-      1）如果q未遍历，执行tarjen(u)；否则，不执行tarjen(u)
+      1）如果q未遍历，执行tarjen(u)；否则，不执行tarjan(u)
       2）步骤1)后，q就遍历过了，如果是“遍历未结算”，令low(cur) = min ( low(cur), low(q))；
                             如果是“已结算”，什么也不做
 5，如果经历完步骤4，依然发现low(cur) = dfn(cur)，
