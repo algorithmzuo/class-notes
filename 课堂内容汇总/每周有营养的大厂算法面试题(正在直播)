@@ -744,7 +744,7 @@ a和b表示arr范围，范围假设从1开始，不从0开始
 第i次能向左或者向右跳严格的i步
 请问从0到x位置，至少跳几次可以到达
 字节考的问题其实就是这个问题
-找到了测试链接 : https://www.luogu.com.cn/problem/CF11B
+leetcode测试链接 : https://leetcode.com/problems/reach-a-number/
 
 来自理想汽车
 a -> b，代表a在食物链中被b捕食
