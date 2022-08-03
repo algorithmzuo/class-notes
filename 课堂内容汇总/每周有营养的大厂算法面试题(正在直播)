@@ -1486,3 +1486,57 @@ nums 中的 子集 是通过删除 nums 中一些（可能一个都不删除�
 测试链接 : https://leetcode.cn/problems/the-number-of-good-subsets/
 
 
+
+第034节 2022年8月第1周流行算法题目解析
+
+在一个 2 * 3 的板上（board）有 5 块砖瓦，用数字 1~5 来表示, 
+以及一块空缺用 0 来表示。一次 移动 定义为选择 0 与一个相邻的数字（上下左右）进行交换.
+最终当板 board 的结果是 [[1,2,3],[4,5,0]] 谜板被解开。
+给出一个谜板的初始状态 board ，
+返回最少可以通过多少次移动解开谜板，如果不能解开谜板，则返回 -1 。
+测试链接 : https://leetcode.cn/problems/sliding-puzzle/
+
+找到数组中的水王数
+本题来自，大厂刷题班，23节
+为了讲述下一个题，才重新讲述这个题
+比较简单
+
+设计一个数据结构，有效地找到给定子数组的 多数元素 。
+子数组的 多数元素 是在子数组中出现 threshold 次数或次数以上的元素。
+实现 MajorityChecker 类:
+MajorityChecker(int[] arr) 
+会用给定的数组 arr 对 MajorityChecker 初始化。
+int query(int left, int right, int threshold) 
+返回子数组中的元素  arr[left...right] 至少出现 threshold 次数，
+如果不存在这样的元素则返回 -1。
+为了让同学们听懂这个题
+才安排的水王问题重讲
+测试链接 : https://leetcode.cn/problems/online-majority-element-in-subarray/
+
+给你一个长度为 n 的整数数组 rolls 和一个整数 k 。
+你扔一个 k 面的骰子 n 次，骰子的每个面分别是 1 到 k ，
+其中第 i 次扔得到的数字是 rolls[i] 。
+请你返回 无法 从 rolls 中得到的 最短 骰子子序列的长度。
+扔一个 k 面的骰子 len 次得到的是一个长度为 len 的 骰子子序列 。
+注意 ，子序列只需要保持在原数组中的顺序，不需要连续。
+测试链接 : https://leetcode.cn/problems/shortest-impossible-sequence-of-rolls/
+
+给定一个只由小写字母和数字字符组成的字符串str
+要求子串必须只含有一个小写字母，数字字符数量随意
+求这样的子串最大长度是多少
+
+栈只提供push、pop、isEmpty三个方法
+请完成无序栈的排序，要求排完序之后，从栈顶到栈底从小到大
+只能使用栈提供的push、pop、isEmpty三个方法、以及递归函数
+除此之外不能使用任何的容器，任何容器都不许，连数组也不行
+也不能自己定义任何结构体
+就是只用：
+1) 栈提供的push、pop、isEmpty三个方法
+2) 简单返回值的递归函数
+
+
+
+
+
+
+
