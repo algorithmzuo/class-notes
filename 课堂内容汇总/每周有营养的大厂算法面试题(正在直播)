@@ -2581,6 +2581,73 @@ string convert(string s, int numRows)
 
 
 
+第051节 2022年12月第1周流行算法题目解析
+
+如果一个正整数每一个数位都是 互不相同 的，我们称它是 特殊整数 。
+给你一个正整数 n ，请你返回区间 [1, n] 之间特殊整数的数目。
+测试链接 : https://leetcode.cn/problems/count-special-integers/
+
+给你一棵 二叉树 的根节点 root ，树中有 n 个节点
+每个节点都可以被分配一个从 1 到 n 且互不相同的值
+另给你一个长度为 m 的数组 queries
+你必须在树上执行 m 个 独立 的查询，其中第 i 个查询你需要执行以下操作：
+从树中 移除 以 queries[i] 的值作为根节点的子树
+题目所用测试用例保证 queries[i] 不 等于根节点的值。
+返回一个长度为 m 的数组 answer ，其中 answer[i] 是执行第 i 个查询后树的高度。
+注意：
+查询之间是独立的，所以在每个查询执行后，树会回到其 初始 状态。
+树的高度是从根到树中某个节点的 最长简单路径中的边数 。
+测试链接 : https://leetcode.cn/problems/height-of-binary-tree-after-subtree-removal-queries/
+
+给定一个无向、连通的树
+树中有 n 个标记为 0...n-1 的节点以及 n-1 条边 。
+给定整数 n 和数组 edges ，
+edges[i] = [ai, bi]表示树中的节点 ai 和 bi 之间有一条边。
+返回长度为 n 的数组 answer ，其中 answer[i] : 
+树中第 i 个节点与所有其他节点之间的距离之和。
+测试链接 : https://leetcode.cn/problems/sum-of-distances-in-tree/
+
+X轴上有一些机器人和工厂。给你一个整数数组robot，其中robot[i]是第i个机器人的位置
+再给你一个二维整数数组factory，其中 factory[j] = [positionj, limitj]
+表示第 j 个工厂的位置在 positionj ，且第 j 个工厂最多可以修理 limitj 个机器人
+每个机器人所在的位置 互不相同。每个工厂所在的位置也互不相同
+注意一个机器人可能一开始跟一个工厂在相同的位置
+所有机器人一开始都是坏的，他们会沿着设定的方向一直移动
+设定的方向要么是 X 轴的正方向，要么是 X 轴的负方向
+当一个机器人经过一个没达到上限的工厂时，这个工厂会维修这个机器人，且机器人停止移动
+任何时刻，你都可以设置 部分 机器人的移动方向
+你的目标是最小化所有机器人总的移动距离
+请你返回所有机器人移动的最小总距离
+注意：
+所有机器人移动速度相同
+如果两个机器人移动方向相同，它们永远不会碰撞
+如果两个机器人迎面相遇，它们也不会碰撞，它们彼此之间会擦肩而过
+如果一个机器人经过了一个已经达到上限的工厂，机器人会当作工厂不存在，继续移动
+机器人从位置 x 到位置 y 的移动距离为 |y - x|
+1 <= robot.length, factory.length <= 100
+factory[j].length == 2
+-10^9 <= robot[i], positionj <= 10^9
+0 <= limitj <= robot.length
+测试数据保证所有机器人都可以被维修
+测试链接 : https://leetcode.cn/problems/minimum-total-distance-traveled/
+
+不打算讲了，非常难
+蓝桥杯练习题
+洛谷原题
+等差数列的概念人人都知道
+给定一个原始数组arr，长度为N
+并且实现如下两个操作 : 
+void add(int l, int r, int a, int b) : 
+表示在arr[l...r]这个范围上，
+从左往右依次加 : a、a + b * 1、a + b*2、...、a + b*(r-l)
+int number(int l, int r) :
+表示arr[l...r]这一段，最少可以划分成几个等差数列
+这两个方法都要求实现的特别高效，因为调用次数很多
+N <= 100000
+add调用次数 <= 100000
+number调用次数 <= 100000
+测试链接 : https://www.luogu.com.cn/problem/P4243
+
 
 
 
