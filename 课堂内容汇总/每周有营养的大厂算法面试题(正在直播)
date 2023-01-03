@@ -1715,6 +1715,7 @@ A[2] = 1, B[2] = 3，表示1到3有双向道路
 D居民和E居民之间，假设有一条路
 那么D居民可以接上A、B、C，4个人可以用一辆车，去往E的话，就再耗费1的汽油
 求所有居民去办公室的路上，最少耗费多少汽油
+测试链接 : https://leetcode.cn/problems/minimum-fuel-cost-to-report-to-the-capital/
 
 来自网易
 小红拿到了一个仅由r、e、d组成的字符串
