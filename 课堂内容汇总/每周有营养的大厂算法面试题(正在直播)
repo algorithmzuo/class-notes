@@ -2761,3 +2761,59 @@ speed *= 2
 
 
 
+第054节 2023年1月第1周流行算法题目解析
+
+给你一个 严格升序排列 的正整数数组 arr 和一个整数 k 。
+请你找到这个数组里第 k 个缺失的正整数。
+测试链接 : https://leetcode.cn/problems/kth-missing-positive-number/
+
+一个正整数如果能被 a 或 b 整除，那么它是神奇的。
+给定三个整数 n , a , b ，返回第 n 个神奇的数字。
+因为答案可能很大，所以返回答案 对 10^9 + 7 取模 后的值。
+测试链接 : https://leetcode.cn/problems/nth-magical-number/
+
+有 n 名工人。 给定两个数组 quality 和 wage ，
+其中，quality[i] 表示第 i 名工人的工作质量，其最低期望工资为 wage[i] 。
+现在我们想雇佣 k 名工人组成一个工资组。在雇佣 一组 k 名工人时，
+我们必须按照下述规则向他们支付工资：
+对工资组中的每名工人，应当按其工作质量与同组其他工人的工作质量的比例来支付工资。
+工资组中的每名工人至少应当得到他们的最低期望工资。
+给定整数 k ，返回 组成满足上述条件的付费群体所需的最小金额
+测试链接 : https://leetcode.cn/problems/minimum-cost-to-hire-k-workers/
+
+汽车从起点出发驶向目的地，该目的地位于出发位置东面 target 英里处。
+沿途有加油站，每个 station[i] 代表一个加油站，
+它位于出发位置东面 station[i][0] 英里处，并且有 station[i][1] 升汽油。
+假设汽车油箱的容量是无限的，其中最初有 startFuel 升燃料。
+它每行驶 1 英里就会用掉 1 升汽油。
+当汽车到达加油站时，它可能停下来加油，将所有汽油从加油站转移到汽车中。
+为了到达目的地，汽车所必要的最低加油次数是多少？如果无法到达目的地，则返回 -1 。
+注意：如果汽车到达加油站时剩余燃料为 0，它仍然可以在那里加油。
+如果汽车到达目的地时剩余燃料为 0，仍然认为它已经到达目的地。
+测试链接 : https://leetcode.cn/problems/minimum-number-of-refueling-stops/
+
+给定一个字符串 s 和一个整数 k 。你可以从 s 的前 k 个字母中选择一个
+并把它加到字符串的末尾
+返回 在应用上述步骤的任意数量的移动后，字典上最小的字符串
+测试链接 : https://leetcode.cn/problems/orderly-queue/
+
+给定一个长度为 n 的字符串 s ，其中 s[i] 是:
+D 意味着减少
+I 意味着增加
+有效排列 是对有 n + 1 个在 [0, n]  范围内的整数的一个排列 perm ，使得对所有的 i：
+如果 s[i] == 'D'，那么 perm[i] > perm[i+1]，以及；
+如果 s[i] == 'I'，那么 perm[i] < perm[i+1]。
+返回 有效排列  perm的数量 。因为答案可能很大，所以请返回你的答案对 10^9 + 7 取余。
+测试链接 : https://leetcode.cn/problems/valid-permutations-for-di-sequence/
+
+
+
+
+
+
+
+
+
+
+
+
