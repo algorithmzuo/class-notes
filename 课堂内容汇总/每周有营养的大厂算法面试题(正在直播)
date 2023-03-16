@@ -3208,6 +3208,59 @@ R(e_1 + e_2) = {a + b for (a, b) in R(e_1) × R(e_2)}
 
 
 
+第062节 2023年3月第3周流行算法题目解析
+
+给你一个 非递减 的正整数数组 nums 和整数 K
+判断该数组是否可以被分成一个或几个 长度至少 为 K 的 不相交的递增子序列
+测试链接 : https://leetcode.cn/problems/divide-array-into-increasing-sequences/
+
+来自学员问题
+真实大厂笔试题
+给定一个数组arr，长度为n
+再给定一个数字k，表示一定要将arr划分成k个集合
+每个数字只能进一个集合
+返回每个集合内部的平均值都累加起来最小的值
+平均值向下取整
+1 <= n <= 10^5
+0 <= arr[i] <= 10^5
+1 <= k <= n
+
+给你一个正整数数组 nums，请你移除 最短 子数组（可以为 空）
+使得剩余元素的 和 能被 p 整除。 不允许 将整个数组都移除。
+请你返回你需要移除的最短子数组的长度，如果无法满足题目要求，返回 -1 。
+子数组 定义为原数组中连续的一组元素。
+测试链接 : https://leetcode.cn/problems/make-sum-divisible-by-p/
+
+布尔表达式 是计算结果不是 true 就是 false 的表达式
+有效的表达式需遵循以下约定：
+'t'，运算结果为 true
+'f'，运算结果为 false
+'!(subExpr)'，运算过程为对内部表达式 subExpr 进行 逻辑非（NOT）运算
+'&(subExpr1, subExpr2, ..., subExprn)'
+运算过程为对 2 个或以上内部表达式 
+subExpr1, subExpr2, ..., subExprn 进行 逻辑与（AND）运算
+'|(subExpr1, subExpr2, ..., subExprn)'
+运算过程为对 2 个或以上内部表达式
+subExpr1, subExpr2, ..., subExprn 进行 逻辑或（OR）运算
+给你一个以字符串形式表述的 布尔表达式 expression，返回该式的运算结果。
+题目测试用例所给出的表达式均为有效的布尔表达式，遵循上述约定。
+测试链接 : https://leetcode.cn/problems/parsing-a-boolean-expression/
+
+来自学员问题，大厂笔试面经帖子
+假设一共有M个车库，编号1~M，时间点从早到晚是从1~T
+一共有N个记录，每一条记录如下{a, b, c}
+表示一辆车在b时间点进入a车库，在c时间点从a车库出去
+一共有K个查询，每个查询只有一个数字X，表示请问在X时刻，
+有多少个车库包含车的数量>=3，请返回K个查询的答案
+1 <= M, N, K <= 10^5
+1 <= T <= 10^9
+
+
+
+
+
+
+
 
 
 
