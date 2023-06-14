@@ -3857,3 +3857,63 @@ s' 与 s 匹配，当且仅当 s' 与 s 长度相同，且最多有 k 个位置�
 
 
 
+第072节 2023年6月第2周流行算法题目解析
+
+给你一个长度为 n 下标从 0 开始的整数数组 nums
+它包含 1 到 n 的所有数字，请你返回上升四元组的数目。
+如果一个四元组 (i, j, k, l) 满足以下条件，我们称它是上升的：
+0 <= i < j < k < l < n 且
+nums[i] < nums[k] < nums[j] < nums[l] 。
+测试链接 : https://leetcode.cn/problems/count-increasing-quadruplets/
+
+来自华为od
+给定一个数组arr，长度为n，表示n个格子的分数，并且这些格子首尾相连
+孩子不能选相邻的格子，不能回头选，不能选超过一圈
+但是孩子可以决定从任何位置开始选，也可以什么都不选
+返回孩子能获得的最大分值
+1 <= n <= 10^6
+0 <= arr[i] <= 10^6
+
+给你一个字符串 s ，请你去除字符串中重复的字母，使得每个字母只出现一次
+需保证 返回结果的字典序最小
+要求不能打乱其他字符的相对位置)
+测试链接 : https://leetcode.cn/problems/remove-duplicate-letters/
+大厂刷题班讲过，不过那时没有讲出最优解，安排一下重讲
+
+给你一个由 n 个数对组成的数对数组 pairs
+其中 pairs[i] = [lefti, righti] 且 lefti < righti 。
+现在，我们定义一种 跟随 关系，当且仅当 b < c 时
+数对 p2 = [c, d] 才可以跟在 p1 = [a, b] 后面
+我们用这种形式来构造 数对链
+找出并返回能够形成的 最长数对链的长度
+你不需要用到所有的数对，你可以以任何顺序选择其中的一些数对来构造。
+测试链接 : https://leetcode.cn/problems/maximum-length-of-pair-chain/
+
+给你两个整数数组 arr1 和 arr2
+返回使 arr1 严格递增所需要的最小「操作」数（可能为 0）。
+每一步「操作」中，你可以分别从 arr1 和 arr2 中各选出一个索引，
+分别为 i 和 j，0 <= i < arr1.length 和 0 <= j < arr2.length，
+然后进行赋值运算 arr1[i] = arr2[j]。如果无法让 arr1 严格递增，请返回 -1。
+之前讲过这个题，能通过但不是最优解，所以我们直接补一个最优解
+测试链接 : https://leetcode.cn/problems/make-array-strictly-increasing/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
