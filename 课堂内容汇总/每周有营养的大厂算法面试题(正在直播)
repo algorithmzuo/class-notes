@@ -4130,6 +4130,66 @@ forceField[i] = [x,y,side]
 
 
 
+第077节 2023年7月3周流行算法题目解析
+
+先来一个最近学员在国外面试的题
+有一个由x轴和y轴组成的坐标系
+"y下"和"y上"表示一条无限延伸的道路，"y下"表示这个道路的下限，"y上"表示这个道路的上限
+给定一批长方形，每一个长方形有(x1, x2, y1, y2)，4个坐标可以表示一个长方形
+判断这条道路整体是不是可以走通的
+以下为正式题目
+图片在计算机处理中往往是使用二维矩阵来表示的
+给你一个大小为 m x n 的二进制矩阵 image 表示一张黑白图片，0 代表白色像素，1 代表黑色像素
+黑色像素相互连接，也就是说，图片中只会有一片连在一块儿的黑色像素。像素点是水平或竖直方向连接的
+给你两个整数 x 和 y 表示某一个黑色像素的位置
+请你找出包含全部黑色像素的最小矩形（与坐标轴对齐），并返回该矩形的面积
+你必须设计并实现一个时间复杂度低于 O(m*n) 的算法来解决此问题。
+测试链接 : https://leetcode.cn/problems/smallest-rectangle-enclosing-black-pixels/
+
+一个句子是由一些单词与它们之间的单个空格组成
+且句子的开头和结尾没有多余空格
+比方说，"Hello World" ，"HELLO" ，"hello world hello world" 都是句子
+每个单词都 只 包含大写和小写英文字母
+如果两个句子 sentence1 和 sentence2
+可以通过往其中一个句子插入一个任意的句子（可以是空句子）而得到另一个句子
+那么我们称这两个句子是 相似的
+比方说，sentence1 = "Hello my name is Jane" 
+且 sentence2 = "Hello Jane"
+我们可以往 sentence2 中 "Hello" 和 "Jane" 之间插入 "my name is"
+得到 sentence1
+给你两个句子 sentence1 和 sentence2
+如果 sentence1 和 sentence2 是相似的，请你返回 true ，否则返回 false
+测试链接 : https://leetcode.cn/problems/sentence-similarity-iii/
+
+每一种货币都给定面值val[i]，和拥有的数量cnt[i]
+想知道目前拥有的货币，在钱数为1、2、3...m时，能找零成功的钱数有多少
+也就是说当钱数的范围是1~m，返回这个范围上有多少可以找零成功的钱数
+比如只有3元的货币，数量是5张
+m = 10
+那么在1~10范围上，只有钱数是3、6、9时，可以成功找零
+所以返回3，表示有3种钱数可以找零成功
+测试链接 : http://poj.org/problem?id=1742
+
+我们把无限数量的栈排成一行，按从左到右的次序从 0 开始编号
+每个栈的的最大容量 capacity 都相同。实现一个叫「餐盘」的类 DinnerPlates
+DinnerPlates(int capacity) - 给出栈的最大容量 capacity
+void push(int val) 将给出的正整数 val 推入 从左往右第一个 没有满的栈
+int pop() 返回 从右往左第一个 非空栈顶部的值，并将其从栈中删除
+          如果所有的栈都是空的，请返回 -1。
+int popAtStack(int index) - 返回编号 index 的栈顶部的值，并将其从栈中删除
+          如果编号 index 的栈是空的，请返回 -1。
+测试链接 : https://leetcode.cn/problems/dinner-plate-stacks/
+
+给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先
+测试链接 : https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/
+
+
+
+
+
+
+
+
 
 
 
